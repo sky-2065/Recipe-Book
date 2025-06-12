@@ -1,0 +1,54 @@
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/901/064/small/blue-sky-purple-black-bubble-colorful-gradient-rainbow-pastel-brush-paint-smoke-creative-graphic-design-abstract-vintage-pattern-brush-template-beautiful-black-background-wallpaper-copy-space-vector.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+.recipe-container {
+  border: 0.9px solid grey;
+  padding: 50px;
+  width: 700px;
+  border-radius: 5px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 12px black;
+}
+.recipe {
+  border: 2px solid rgb(43, 179, 43);
+  margin: 10px;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: rgb(43, 179, 43);
+  font-size: 1.2rem;
+}
+input {
+  width: 250px;
+  height: 20px;
+
+  padding: 5px;
+}
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: cursive;
+  border: 0.5px solid grey;
+  cursor: pointer;
+  background-color: rgb(218, 211, 211);
+}
+button:hover {
+  background-color: white;
+}
+input:hover {
+  border-radius: 5px;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+textarea {
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px;
+}

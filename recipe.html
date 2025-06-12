@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="recipe.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+  </head>
+  <body>
+    <div class="recipe-container">
+      <h3>My Recipe Book 📚</h3>
+      <form id="recipe-form">
+        <input
+          type="text"
+          placeholder="Recipe Title"
+          id="title"
+          required
+          oninput="upcase()"
+        />
+        <script>
+          function upcase() {
+            const x = document.getElementById("title");
+            x.value = x.value.toUpperCase();
+          }
+        </script>
+        <br />
+        <br />
+        <textarea
+          id="ingredient"
+          cols="30"
+          rows="10"
+          placeholder="ingredient: seprate with (,)"
+          required
+        ></textarea>
+        <textarea
+          id="step"
+          cols="30"
+          rows="10"
+          placeholder="step"
+          required
+        ></textarea>
+        <br />
+        <button type="submit">Add Recipe</button>
+      </form>
+      <h2>Recipe 📝</h2>
+      <div id="recipe-list"></div>
+    </div>
+  </body>
+  <script src="recipe.js"></script>
+</html>
